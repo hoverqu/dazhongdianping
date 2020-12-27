@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="lps.entities">
+
+	<class name="UserLog" table="esou_user_log">
+		<id name="id" column="ESOU_USER_LOG_ID" length="8">
+			<generator class="native" />
+		</id>
+		<property name="loginname" column="ESOU_USER_LOG_LOGINNAME" type="string" length="80"></property>
+		<property name="ip" column="ESOU_USER_LOG_IP" type="string" length="80"></property>
+		<property name="channel" column="ESOU_USER_LOG_CHANNEL" type="string" length="80"></property>
+		<property name="module" column="ESOU_USER_LOG_MODULE" type="string" length="80"></property>
+		<property name="operate" column="ESOU_USER_LOG_OPERATE" type="string" length="80"></property>
+		<property name="operateStatus" column="ESOU_USER_LOG_OPERATE_STATUS" type="integer" length="8"></property>
+		<property name="operateTime" column="ESOU_USER_LOG_OPERATE_TIME" type="date" length="80"></property>
+		
+	</class>
+
+</hibernate-mapping>

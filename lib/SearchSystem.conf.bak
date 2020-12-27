@@ -1,0 +1,36 @@
+﻿# 系统工作模式，是不是分布式。false表示单机，true表示分布式
+system.work.mode.distributed = false
+
+# 服务端的IP地址
+#system.net.sock.ip = 218.28.206.60
+system.net.sock.ip = 127.0.0.1
+
+# 服务端的检索监听端口
+system.net.sock.query.port = 8888
+
+# 服务端的加载监听端口
+system.net.sock.index.port = 8889
+
+# 系统的字符集编码
+system.charset = GBK
+#system.charset = UTF-8
+
+# 系统加载策略，local表示表示客户端和服务端在同一个机器, remote既可以表示在不同的机器，也可以表示在同一台机器
+system.add.method = remote
+
+# 系统加载方式是否采用线程自动加载，true表示是自动加载。false表示不是
+system.add.byThread = false
+
+# 当格式化文件加载完成后，处理的方式。true表示删除。false表示保留。此项当且仅当加载方式是线程自动加载时有效
+system.add.articlefile.del = false
+
+# 一个格式化文件里面存放的文章数量。此项当且仅当加载方式是线程自动加载时有效
+system.index.articleNumInOneFile = 5000
+
+# 格式化文件的操作目录。此项当且仅当加载方式是线程自动加载时有效
+system.index.file.dir = format_file
+
+
+socket.timeout.second=3000
+
+article.textfield.maxlength.K=200
